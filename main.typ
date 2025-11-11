@@ -1,4 +1,4 @@
-#set text(font: "Noto Sans")
+#set text(font: "SulphurPoint-Regular")
 #set page(
   paper: "us-letter",
   margin: (left: 3cm, top: 2.5cm, right: 2.5cm, bottom: 2.5cm)
