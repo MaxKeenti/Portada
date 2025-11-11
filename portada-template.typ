@@ -1,11 +1,3 @@
-#set text(font: "Sulphur Point")
-
-#set page(
-  paper: "us-letter",
-  margin: (left: 3cm, top: 2.5cm, right: 2.5cm, bottom: 2.5cm)
-)
-#set align(center)
-
 // === Template function definition ===
 #let portada(
   titulo_carrera,
@@ -23,7 +15,13 @@
   profesorx,
   fecha,
 ) = [
+  #set text(font: "ITC Avant Garde Gothic")
 
+  #set page(
+  paper: "us-letter",
+  margin: (left: 3cm, top: 2.5cm, right: 2.5cm, bottom: 2.5cm)
+  )
+  #set align(center)
   // === Logos ===
   #let logo-ipn = image("media/logos/IPN_Logo.svg", height: 3.5cm)
   #let logo-upiicsa = image("media/logos/UPIICSA_Logo.svg", height: 3.5cm)
@@ -46,43 +44,43 @@
   // === Central content ===
   #block[
     #v(1.25cm)
-    #text(18pt, weight: "bold")[#ipn]
+    #text(18pt, weight: "semibold")[#ipn]
     #v(0.4cm)
-    #text(17pt, weight: "bold")[#upiicsa]
+    #text(17pt, weight: "semibold")[#upiicsa]
 
     #v(0.4cm)
-    #text(11pt)["#titulo_carrera"]
+    #text(11pt, stretch: 75%)[#titulo_carrera]
     #v(0.1cm)
-    #text(12pt, weight: "bold")[#carrera]
+    #text(12pt, weight: "semibold")[#carrera]
 
     #v(0.2cm)
-    #text(11pt)["#titulo_materia"]
+    #text(11pt, stretch: 75%)[#titulo_materia]
     #v(0.1cm)
-    #text(12pt, weight: "bold")[#materia]
+    #text(12pt, weight: "semibold")[#materia]
 
     #v(0.2cm)
-    #text(11pt)["#titulo_practica"]
+    #text(11pt, stretch: 75%)[#titulo_practica]
     #v(0.1cm)
-    #text(12pt, weight: "bold")[#practica]
+    #text(12pt, weight: "semibold")[#practica]
 
     #v(0.2cm)
-    #text(11pt)["#titulo_secuencia"]
+    #text(11pt, stretch: 75%)[#titulo_secuencia]
     #v(0.1cm)
-    #text(12pt, weight: "bold")[#secuencia]
+    #text(12pt, weight: "semibold")[#secuencia]
 
     #v(0.2cm)
-    #text(11pt)["#titulo_alumno"]
+    #text(11pt, stretch: 75%)[#titulo_alumno]
     #v(0.1cm)
-    #text(12pt, weight: "bold")[#alumno]
+    #text(12pt, weight: "semibold")[#alumno]
 
     #v(0.2cm)
-    #text(11pt)["#titulo_profesorx"]
+    #text(11pt, stretch: 75%)[#titulo_profesorx]
     #v(0.1cm)
-    #text(12pt, weight: "bold")[#profesorx]
+    #text(12pt, weight: "semibold")[#profesorx]
 
     #v(0.2cm)
-    #text(11pt)["#titulo_fecha"]
+    #text(11pt, stretch: 75%)[#titulo_fecha]
     #v(0.1cm)
-    #text(12pt, weight: "bold")[#fecha]
+    #text(12pt, weight: "semibold")[#fecha]
   ]
 ]
